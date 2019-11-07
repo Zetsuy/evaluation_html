@@ -1,11 +1,11 @@
 $max-width1 : 466px;
 $max-width2 : 668px;
+$color_texte_bleu : rgb(0,70,91);
 * {
    font-family: "Bernina";
    src : url('/fonts/BerninaSans-Web-CondensedBold.woff2'); 
 }
 
-@media screen and (max-width: $max-width1) {
 .top{
     .image_top{
         max-width: 100%;
@@ -22,35 +22,84 @@ $max-width2 : 668px;
 
     }
     }
+
 .partie_rdv{
+    margin-top: 10px;
     .logo{
-        width: 50%;
+        max-width: 210px;
+        max-height: 81px;
     }
     button{
-        width: 48%;
+        margin-top: 20px;
+        width: 200px;
         background-color: transparent;
         color: cadetblue;
         border-radius: 10px;
+        float: right;
     }
 }
-.title_criothérapie{
+
+.inner{max-width: $max-width1;}
+
+.title_cryothérapie{
 font-weight: 600;
-color: darkblue;
+color: $color_texte_bleu;
 font-size: 30px;
 text-align: center;
 }
 .texte_principal{
-    color:darkblue;
+    color:$color_texte_bleu;
     text-align: center;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
+}
+.partie_ice_experience{
+font-family: 'GothamHTF-Book';
+font-style: normal;
+font-weight: normal;
+src: local('GothamHTF-Book'), url('GothamHTF-Book.woff') format('woff');
+p{
+    color:$color_texte_bleu;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;    
+    .sous_titre{
+        text-align: center;
+    }
+    .image{
+        margin : auto;
+        img{
+            border-radius: 150px;
+            width: 230px;
+        }
+    }
 }
 }
+@media screen and (min-width: $max-width1+1) {
+.inner{
+    max-width: $max-width2;
+}
+.image:nth-of-type(1){
+    order : 2;
+}
+.image:nth-of-type(2){
+    order : 3;
+}
+.image:nth-of-type(3){
+    order : 1;
+}
 
 
-@media screen and (max-width: $max-width2) {
+}
 
-//}
+
+@media screen and (min-width: $max-width2+1) {
+    .inner{
+        max-width: 800px;
+        margin:auto;
+    }
+}
 
 
 

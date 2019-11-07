@@ -339,40 +339,111 @@ template {
   src: url("/fonts/BerninaSans-Web-CondensedBold.woff2");
 }
 
-@media screen and (max-width: 466px) {
-  .top .image_top {
-    max-width: 100%;
+.top .image_top {
+  max-width: 100%;
+}
+
+.top .reduction {
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top .reduction .jusque_octobre {
+  font-size: 10px;
+}
+
+.partie_rdv {
+  margin-top: 10px;
+}
+
+.partie_rdv .logo {
+  max-width: 210px;
+  max-height: 81px;
+}
+
+.partie_rdv button {
+  margin-top: 20px;
+  width: 200px;
+  background-color: transparent;
+  color: cadetblue;
+  border-radius: 10px;
+  float: right;
+}
+
+.inner {
+  max-width: 466px;
+}
+
+.title_cryothérapie {
+  font-weight: 600;
+  color: #00465b;
+  font-size: 30px;
+  text-align: center;
+}
+
+.texte_principal {
+  color: #00465b;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.partie_ice_experience {
+  font-family: 'GothamHTF-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("GothamHTF-Book"), url("GothamHTF-Book.woff") format("woff");
+}
+
+.partie_ice_experience p {
+  color: #00465b;
+}
+
+.partie_ice_experience .images {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partie_ice_experience .images .sous_titre {
+  text-align: center;
+}
+
+.partie_ice_experience .images .image {
+  margin: auto;
+}
+
+.partie_ice_experience .images .image img {
+  border-radius: 150px;
+  width: 230px;
+}
+
+@media screen and (min-width: 467px) {
+  .inner {
+    max-width: 668px;
   }
-  .top .reduction {
-    text-align: center;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
+  .image:nth-of-type(1) {
+    -ms-flex-order: 2;
+        order: 2;
   }
-  .top .reduction .jusque_octobre {
-    font-size: 10px;
+  .image:nth-of-type(2) {
+    -ms-flex-order: 3;
+        order: 3;
   }
-  .partie_rdv .logo {
-    width: 50%;
+  .image:nth-of-type(3) {
+    -ms-flex-order: 1;
+        order: 1;
   }
-  .partie_rdv button {
-    width: 48%;
-    background-color: transparent;
-    color: cadetblue;
-    border-radius: 10px;
-  }
-  .title_criothérapie {
-    font-weight: 600;
-    color: darkblue;
-    font-size: 30px;
-    text-align: center;
-  }
-  .texte_principal {
-    color: darkblue;
-    text-align: center;
-    font-weight: 600;
-    font-size: 20px;
+}
+
+@media screen and (min-width: 669px) {
+  .inner {
+    max-width: 800px;
+    margin: auto;
   }
 }
 
