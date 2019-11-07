@@ -339,11 +339,11 @@ template {
   src: url("/fonts/BerninaSans-Web-CondensedBold.woff2");
 }
 
-.top .image_top {
+header .image_top {
   max-width: 100%;
 }
 
-.top .reduction {
+header .reduction {
   text-align: center;
   background-color: red;
   color: white;
@@ -351,8 +351,15 @@ template {
   font-size: 20px;
 }
 
-.top .reduction .jusque_octobre {
+header .reduction .jusque_octobre {
   font-size: 10px;
+}
+
+header .texte_laissez_froid {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.5);
+  margin-top: -3%;
+  font-size: 2vw;
 }
 
 .partie_rdv {
@@ -398,7 +405,7 @@ template {
   src: local("GothamHTF-Book"), url("GothamHTF-Book.woff") format("woff");
 }
 
-.partie_ice_experience p {
+.partie_ice_experience .titre {
   color: #00465b;
 }
 
@@ -411,6 +418,7 @@ template {
 
 .partie_ice_experience .images .sous_titre {
   text-align: center;
+  color: #00465b;
 }
 
 .partie_ice_experience .images .image {

@@ -6,7 +6,7 @@ $color_texte_bleu : rgb(0,70,91);
    src : url('/fonts/BerninaSans-Web-CondensedBold.woff2'); 
 }
 
-.top{
+header{
     .image_top{
         max-width: 100%;
     }
@@ -19,7 +19,12 @@ $color_texte_bleu : rgb(0,70,91);
         .jusque_octobre{
             font-size: 10px;
         }
-
+    }
+    .texte_laissez_froid{
+        color: white;
+        background-color: transparentize(gray, 0.5);;
+        margin-top: -3%;
+        font-size: 2vw;
     }
     }
 
@@ -58,7 +63,7 @@ font-family: 'GothamHTF-Book';
 font-style: normal;
 font-weight: normal;
 src: local('GothamHTF-Book'), url('GothamHTF-Book.woff') format('woff');
-p{
+.titre{
     color:$color_texte_bleu;
 }
 .images{
@@ -66,6 +71,7 @@ p{
     flex-wrap: wrap;    
     .sous_titre{
         text-align: center;
+        color:$color_texte_bleu;
     }
     .image{
         margin : auto;
