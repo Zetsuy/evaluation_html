@@ -1,0 +1,56 @@
+$max-width1 : 466px;
+$max-width2 : 668px;
+* {
+   font-family: "Bernina";
+   src : url('/fonts/BerninaSans-Web-CondensedBold.woff2'); 
+}
+
+@media screen and (max-width: $max-width1) {
+.top{
+    .image_top{
+        max-width: 100%;
+    }
+    .reduction{
+        text-align: center;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        .jusque_octobre{
+            font-size: 10px;
+        }
+
+    }
+    }
+.partie_rdv{
+    .logo{
+        width: 50%;
+    }
+    button{
+        width: 48%;
+        background-color: transparent;
+        color: cadetblue;
+        border-radius: 10px;
+    }
+}
+.title_criothérapie{
+font-weight: 600;
+color: darkblue;
+font-size: 30px;
+text-align: center;
+}
+.texte_principal{
+    color:darkblue;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+}
+
+
+@media screen and (max-width: $max-width2) {
+
+}
+
+
+
