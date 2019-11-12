@@ -345,10 +345,18 @@ header .image_top {
 
 header .reduction {
   text-align: center;
-  background-color: red;
+  background-color: #6a0e35;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
+  width: 250px;
+  height: auto;
+  position: absolute;
+  border-radius: 5px;
+  top: 50px;
+  right: 50px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 header .reduction .jusque_octobre {
@@ -358,12 +366,14 @@ header .reduction .jusque_octobre {
 header .texte_laissez_froid {
   color: white;
   background-color: rgba(128, 128, 128, 0.5);
-  margin-top: -3%;
-  font-size: 2vw;
+  margin-top: -4%;
+  font-size: 1.5vw;
+  font-weight: bold;
+  position: relative;
 }
 
 .partie_rdv {
-  margin-top: 10px;
+  margin-top: 4%;
 }
 
 .partie_rdv .logo {
