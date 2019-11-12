@@ -394,7 +394,7 @@ header .texte_laissez_froid {
   max-width: 466px;
 }
 
-.title_cryothérapie {
+.title_cryothérapie h1 {
   font-weight: 600;
   color: #00465b;
   font-size: 30px;
@@ -415,8 +415,9 @@ header .texte_laissez_froid {
   src: local("GothamHTF-Book"), url("GothamHTF-Book.woff") format("woff");
 }
 
-.partie_ice_experience .titre {
+.partie_ice_experience .titre h2 {
   color: #00465b;
+  font-size: 20px;
 }
 
 .partie_ice_experience .images {
@@ -426,9 +427,11 @@ header .texte_laissez_froid {
       flex-wrap: wrap;
 }
 
-.partie_ice_experience .images .sous_titre {
+.partie_ice_experience .images .sous_titre h3 {
   text-align: center;
   color: #00465b;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 .partie_ice_experience .images .image {

@@ -55,7 +55,7 @@ header{
 
 .inner{max-width: $max-width1;}
 
-.title_cryothérapie{
+.title_cryothérapie h1{
 font-weight: 600;
 color: $color_texte_bleu;
 font-size: 30px;
@@ -72,15 +72,18 @@ font-family: 'GothamHTF-Book';
 font-style: normal;
 font-weight: normal;
 src: local('GothamHTF-Book'), url('GothamHTF-Book.woff') format('woff');
-.titre{
+.titre h2{
     color:$color_texte_bleu;
+    font-size: 20px;
 }
 .images{
     display: flex;
     flex-wrap: wrap;    
-    .sous_titre{
+    .sous_titre h3{
         text-align: center;
         color:$color_texte_bleu;
+        font-weight: normal;
+        font-size: 15px;
     }
     .image{
         margin : auto;
